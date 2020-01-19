@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="w3style.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 
@@ -12,37 +13,194 @@
 <body>
   <header>
       <div class="logo">
-          Image placeholder
+          <a href="#top"><img src="./img/logo.png" alt=""></a>
       </div>
-      <nav>
-          <a href="#">About me</a>
-          <a href="#">Skills</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
-      </nav>
+      <div class="nav">
+          <a href="#aboutme">About me</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+      </div>
   </header>
   <main>
     <div class="banner">      
-      <img src="./img/linkedinpic.png" alt="">
-      <h2>Hi, I'm Martin</h2>
-      <h4>Let me show you what I can do</h4>
+      <!-- <img src="./img/linkedinpic.png" alt=""> -->
+      <div class="textbox">
+        <h2>Hi, I'm Martin</h2>
+        <h4>Let me show you what I can do</h4>
+      </div>
     </div>
-    <div class="pitch">
+    <div class="aboutme" id="aboutme">
+      <div class="pitch">
+        <h4>Hi! I am Martin Setina</h4>
         <p>Pay me money so I can pay for my expensive hobbies like taking baths in <strong>Grey Goose Vodka</strong> and using <strong>Marlboro</strong> tobacco for fuel. Also, I am fairly <u>unskilled</u> and will not create <em>anything</em> that's aesthetically pleasing, as you can see in this exhibit.</p>
-    </div>
-    <div class="skills">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus quo culpa, vitae assumenda ex facilis ipsam obcaecati magnam voluptatem consectetur! Beatae totam labore, at ad quo rem adipisci nisi!
-    </div>
-    <div class="portfolio">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum unde veniam deserunt corporis ipsam itaque quo, asperiores sunt fuga ipsa debitis doloremque ratione quaerat magni minima! Quis error itaque molestiae?
-    </div>
-    <div class="contact">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quae architecto esse provident eum inventore soluta minima velit laboriosam, tenetur, sit itaque, aperiam unde asperiores porro nihil dolores eveniet blanditiis.
+        <div class="contact">
+          <div class="first">
+            <div class="phone">
+              <img src="./img/phoneicon.png" alt="">
+              <span>Phone:</span> +420 777 123 321
+            </div>
+            <div class="email">
+              <img src="./img/emailicon.png" alt="">
+              <span>Email: </span><a href="mailto:mark.zuckerberg@gmail.com"> mark.zuckerberg@gmail.com</a>
+            </div>
+          </div>
+          <div class="second">
+            <div class="location">
+              <img src="./img/locationicon.png" alt="">
+              <span>Location: </span>Prague
+            </div>
+            <div class="github">
+              <img src="./img/githubicon.png" alt="">
+              <span>Github: </span><a href="github.com/dracheck">github.com/dracheck</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="html">
+          <p>HTML5</p>
+          <div class="progressbar">
+              <div class="w3-light-grey w3-round">
+                <div class="w3-container w3-round w3-dark-grey w3-hover-black w3-small" style="width:80%">80%
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="CSS">
+          <p>CSS3</p>
+          <div class="progressbar">
+              <div class="w3-light-grey w3-round">
+                <div class="w3-container w3-round w3-dark-grey w3-hover-black w3-small" style="width:70%">70%
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="GIMP">
+          <p>GIMP</p>
+          <div class="progressbar">
+              <div class="w3-light-grey w3-round">
+                <div class="w3-container w3-round w3-dark-grey w3-hover-black w3-small" style="width:25%">25%
+                </div>
+              </div>
+            </div>
+          </div>  
+        <div class="Javascript">
+          <p>Javascript</p>
+          <div class="progressbar">
+              <div class="w3-light-grey w3-round">
+                <div class="w3-container w3-round w3-dark-grey w3-hover-black w3-small" style="width:45%">45%
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
 
+    </div>
+    <div class="services" id="services">
+      <h3>My Services</h3>
+      <div class="servicecontainer">
+
+      
+        <div class="webdevelopment">
+          <img src="./img/webicon.png" alt="">
+          <h4>WEB DEVELOPMENT</h4>
+          <p>I can make amazing websites that will blow your mind. I taught Steve Wozniak how computers work and little Billie Gates calls me for tips every day.</p>
+
+        </div>
+        <div class="websitedesign">
+          <img src="./img/laptopicon.png" alt="">
+          <h4>WEB DESIGN</h4>
+          <p>The way I structure websites is similar to how my dear friend Zaha Hadid designed buildings - I focus on the most efficient ways to create mindblowing designs. Some people say that they have met God when looking at my websites.</p>
+        </div>
+        <div class="appdevelopment">
+          <img src="./img/smartphoneicon.png" alt="">
+          <h4>APP DEVELOPMENT</h4>
+          <p>As the actual mastermind behind the invention of the iPhone, I have already more experience in creating smartphone applications than any other coder in the world.</p>
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <h3>My Projects</h3>
+      <div class="projectscontainer">
+        <div class="project1">
+            <a href="#">
+              <div class="overlaycontainer">
+                <img src="./img/projectimg.jpg" alt="">
+                <div class="overlay">
+                  <h4>Project no. 1</h4>
+                  <p>Web development project</p>
+                </div>
+              </div>
+            </a>
+        </div>
+        <div class="project2">
+          <a href="#">
+            <div class="overlaycontainer">
+              <img src="./img/projectimg.jpg" alt="">
+              <div class="overlay">
+                <h4>Project no. 2</h4>
+                <p>Web design project</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project3">
+          <a href="#">
+            <div class="overlaycontainer">
+              <img src="./img/projectimg.jpg" alt="">
+              <div class="overlay">
+                <h4>Project no. 3</h4>
+                <p>App development project</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
   </main>
+<footer>
+  <div class="contactme" id="contact">
+    <h3>Contact Me</h3>
+    <div class="contactmecont">
+      <div class="endphone">
+          <img src="./img/phoneicon.png" alt="">
+          <span>Phone:</span> +420 777 123 321
+      </div>
+      <div class="endemail">
+          <img src="./img/emailicon.png" alt="">
+          <span>Email: </span><a href="mailto:mark.zuckerberg@gmail.com">mark.zuckerberg@gmail.com</a> 
+      </div>
+      <div class="endlocation">
+        <img src="./img/locationicon.png" alt="">
+        <span>Location: </span>Prague
+      </div>
+      <div class="endgithub">
+        <img src="./img/githubicon.png" alt="">
+        <span>Github: </span><a href="github.com/dracheck">github.com/dracheck</a> 
+      </div>
+    </div>
+    <div class="contactform">
+      <form action="">
+        <div class="nameemailinput">
+          <div class="nameinput">
+            <input type="text" name="name" id="name" placeholder= "Your name"> 
+          </div>
+          <div class="emailinput">
+            <input type="email" name="email" id="email" placeholder= "Your email">
+          </div>
+        </div>
 
+        <div class="messageinput">
+          <textarea name="message" id="message" cols="57" rows="10" placeholder="Write your message here..."></textarea>
+        </div>
+        <input type="submit" value="Send message">
+      </form>
+    </div>
+  </div>
+
+</footer>
     
 </body>
 </html>
