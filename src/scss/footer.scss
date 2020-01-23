@@ -1,0 +1,41 @@
+footer {
+    .contactme {
+        display: flex;
+        flex-direction: column;
+        background-color: #fafafa;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+        align-items: center;
+        .contactmecont {
+            display: flex;
+            display: column;
+            width: 100%;
+            justify-content: space-around;
+            img {
+                width: 32px;
+                margin-right: 5px;
+            }
+        }
+        .contactform {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-top: 50px;
+            .nameemailinput {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                .nameinput {
+                    margin-right: 5%;
+                }
+                .emailinput {
+                    margin-left: 5%;
+                }              
+            }
+            .messageinput {
+                margin-top: 30px;
+            }
+        }        
+    }
+}

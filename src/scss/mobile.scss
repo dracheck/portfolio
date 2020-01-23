@@ -1,0 +1,203 @@
+//switches to mobile design at mobile aspect ratio
+$primary_text_color: #333333;
+$primary_bg_color: #dfdfdf;
+$secondary_bg_color: #fafafa;
+
+
+    @media (max-aspect-ratio: 13/7) {
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;   
+    color: #333333;
+    header {
+        height: 100vh;
+        width: 100%;
+        background-image: url('../img/background-mobile.png');
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        .logo {
+            height: 20%;
+            padding-top: 12%;
+        }
+        .nav {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            a {
+                height: 10%;
+                margin-top: 5%;
+                color: $primary_text_color;
+                background-color: $primary_bg_color;
+                opacity: .8;
+                width: 90%;
+                text-decoration: none;
+                text-align: center; 
+                padding-top: auto;
+                border-radius: 2%;
+                padding-top: 1%;
+                font-size: 1.5rem;   
+            }
+
+        }
+
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .banner {
+            display: none;
+        }
+        .aboutme {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+            padding: 0 5vw;
+            h4 {
+                text-align: center;
+            }
+            img {
+                width: 6%;
+                margin-right: 3vw;
+            }
+        }
+        .skills {
+            margin-top: 5vw;
+        }
+        .services {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 5vh 0;
+            padding: 0 5vw;
+            background-color: $secondary_bg_color;
+            align-items: center;
+            h3 {
+                margin-bottom: 22px;
+                margin-top: 40px;
+                text-transform: uppercase;
+            }
+            .service {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+                img {
+                    width: 32px;    
+                }
+                h4 {
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+            }
+            .websitedesign {
+                border-bottom: 1px solid $primary_bg_color;
+            }
+            .webdevelopment {
+                border-bottom: 1px solid $primary_bg_color;
+            }
+        }
+        .projectscontainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 130vh;
+            padding: 0 5vw;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .overlaycontainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                border-radius: 25%;
+                max-height: 320px;
+                max-width: 352px;
+            }
+            .overlay{
+                position: absolute;
+                background-color: black;
+                height: 100%;
+                width: 100%;
+                opacity: .7;
+                color: white;
+                border-radius: 25%;
+            }
+            img{
+                width: 100%;
+                border-radius: 25%;
+            }
+            h4 {
+                color: white;
+                text-align: center;
+            }
+            p {
+                color: white;
+                text-align: center;
+
+            }
+
+        }
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-evenly;
+        .contactmecont {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10vw;
+            img {
+                width: 32px;
+            }
+        }
+        .contactform {
+            margin-top: 10vh;
+            padding-left: 10vw;
+        }
+        #name {
+            width: 90%;
+            border: 1px solid $primary_bg_color;
+        }
+        #email {
+            width: 90%;
+            border: 1px solid $primary_bg_color;
+
+        }
+        #message {
+            width: 90%;
+            border: 1px solid $primary_bg_color;
+        }
+
+    }
+
+    
+
+
+h3 {
+    text-align: center; 
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+
+h4 {
+    font-size: 26px;
+    color: #333333;
+}
+
+}
+}

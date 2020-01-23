@@ -1,0 +1,163 @@
+@media (min-aspect-ratio: 13/7) {
+
+main {
+
+    .banner {
+        //breakpoint at 670px
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 2px black solid;
+        text-align: center;
+        height: 85vh;
+        color: black;
+        background-color: rgba(0,0,0,.6);
+        h2 {
+            font-size: 3rem;
+            color: white;
+
+        }
+        h4 {
+            font-size: 1.5rem;
+            color: #c2c2c2;
+        }
+        @media (max-width: 800px) {
+            height: 20vh;
+        }
+        @media (max-width: 420px) {
+            height: 100vh;
+            color: white;
+            
+
+        }
+    }
+    .aboutme {
+        display: flex;
+        background-color: white;
+        height: 100vh;
+
+        .pitch {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding-top: 20vh;
+            padding-bottom: 15vh;
+        
+            h4 {
+                margin-left:5vw;
+                margin-right: 5vw;        
+            }
+
+            p {
+                color: #333333;
+                margin-bottom: 15vh;
+                margin-left:5vw;
+                margin-right: 5vw;            
+            }
+            .contact {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                img {
+                    width: 16px;
+                }
+            }
+            
+        }
+        .skills {
+            display: flex;
+            flex-direction: column;
+            padding: 15vh 100px;
+            width: 50%;
+            .progressbar {
+                margin-bottom: 20px;
+            }            
+        }
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        background-color: #fafafa; 
+        .servicecontainer {
+            display: flex;
+            flex-direction: row;
+            height: 60vh;
+            text-align: center;
+            align-items: baseline;
+            img {
+                width: 32px;
+                height: 32px;   
+            }
+            h4 {
+                font-size: 19px;
+            }
+            .service {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+                align-items: center;
+                padding: 20px 40px;
+                height: 90%;
+            }
+            
+            .webdevelopment {
+                border-right: 1px solid #dfdfdf;
+            }
+            .websitedesign {
+                border-right: 1px solid #dfdfdf;
+            }
+
+        }
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        height: 100vh;
+        .projectscontainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            .project {
+                width: auto;
+                margin: 5%;
+                .overlaycontainer {
+                    width: 100%;
+                    display: flex;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        border-radius: 25%;                  
+                    }
+               }
+            }   
+        }   
+    }
+}
+// overlay can't be nested for some reason
+.overlaycontainer .overlay {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    color: white;
+    border-radius: 25%;
+    &:hover {
+        opacity: .9;
+    }
+    h4 {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+}

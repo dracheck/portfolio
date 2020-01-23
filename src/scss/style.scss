@@ -1,0 +1,35 @@
+@import 'mobile.scss';
+
+@media (min-aspect-ratio: 13/7) {
+
+
+* {
+        box-sizing: border-box;
+ }
+ @import 'header.scss';
+ @import 'main.scss';
+ @import 'footer.scss';
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #333333;
+}
+
+h3 {
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+
+h4 {
+    font-size: 26px;
+    color: #333333;
+}
+
+}
